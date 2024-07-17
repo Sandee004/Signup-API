@@ -1,12 +1,13 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template, send_from_directory
 from models import Users
 from config import db, app
 from werkzeug.exceptions import BadRequest
 import bcrypt
 
+
 @app.route('/')
 def home():
-    return "Homepage"
+    return send_from_directory('../frontend/dist', 'index.html')
 
 
 @app.route('/signup', methods=["POST"])
