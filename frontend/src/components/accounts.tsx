@@ -18,7 +18,8 @@ const CreatedAccounts = () => {
                 const options = {
                   method: "DELETE",
                 };
-                const response = await fetch(`http://127.0.0.1:5000/delete_user/${id}`, options);
+                //const response = await fetch(`http://127.0.0.1:5000/delete_user/${id}`, options);
+                const response = await fetch(`https://signup-api-f02o.onrender.com/delete_user/${id}`, options);
                 if (response.status === 200) {
                   console.log("User deleted successfully");
                   await fetchAPI();
@@ -37,7 +38,8 @@ const CreatedAccounts = () => {
     
       const fetchAPI = async() => {
         try {
-        const response = await fetch('http://localhost:5000/accounts');
+        //const response = await fetch('http://localhost:5000/accounts');
+        const response = await fetch ('https://signup-api-f02o.onrender.com/accounts');
 
         if (!response.ok) {
           throw new Error(`Failed to fetch accounts: ${response.statusText}`);
