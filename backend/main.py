@@ -7,7 +7,7 @@ import bcrypt
 
 @app.route('/')
 def home():
-    return send_from_directory(os.path.join(app.root_path, '../frontend/dist'), 'index.html')
+    return send_from_directory('../frontend/dist', 'index.html')
 
 
 @app.route('/signup', methods=["POST"])
