@@ -1,4 +1,4 @@
-from backend.config import db
+from config import db
 
 class Users(db.Model):
     id = db.Column(db.Integer, primary_key=True, unique=True)
