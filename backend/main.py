@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify, render_template, send_from_directory
-from backend.models import Users
-from backend.config import db, app
+from models import Users
+from config import db, app
 from werkzeug.exceptions import BadRequest
 import bcrypt
 
