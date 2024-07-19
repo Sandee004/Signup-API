@@ -38,8 +38,8 @@ const CreatedAccounts = () => {
     
       const fetchAPI = async() => {
         try {
-        const response = await fetch('http://localhost:5000/accounts');
-        //const response = await fetch ('https://signup-api-f02o.onrender.com/accounts');
+        //const response = await fetch('http://localhost:5000/accounts');
+        const response = await fetch ('https://signup-api-l42o.onrender.com/accounts');
 
         if (!response.ok) {
           throw new Error(`Failed to fetch accounts: ${response.statusText}`);

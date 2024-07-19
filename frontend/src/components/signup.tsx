@@ -16,8 +16,8 @@ const SignUp = () => {
             password,
         }
 
-        const url = 'http://localhost:5000/signup'
-        //const url = 'https://signup-api-f02o.onrender.com/signup'
+        //const url = 'http://localhost:5000/signup'
+        const url = 'https://signup-api-l42o.onrender.com/signup'
 
         const options = {
             method: "POST",
